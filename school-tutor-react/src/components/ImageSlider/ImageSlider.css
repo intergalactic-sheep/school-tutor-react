@@ -1,0 +1,128 @@
+.slider {
+  width: 100%;
+}
+
+.slider__gallery {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider__image-container {
+  width: 455px;
+  height: 460px;
+  border: 10px solid white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 7px;
+  flex-shrink: 0;
+}
+
+.slider__image-container:last-of-type {
+  margin-right: 0;
+}
+
+.slider__image {
+  width: 100%;
+  height: auto;
+  max-height: 98%;
+  border-radius: 5px;
+}
+
+.slider__button-container {
+  max-width: fit-content;
+  display: flex;
+  margin: 0 0 80px auto;
+}
+
+.slider__button {
+  background-color: unset;
+  border: none;
+  width: 60px;
+  height: 37px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.slider__button:hover {
+  opacity: 0.7;
+}
+
+.slider__prev {
+  background-image: url("../../images/arrow-prev.svg");
+  margin: 0 43px 0 0;
+}
+
+.slider__next {
+  background-image: url("../../images/arrow-next.svg");
+}
+
+.slider__dot-bar {
+  width: fit-content;
+  display: flex;
+  margin: 20px auto 0 auto;
+  padding: 0;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__dot {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.slider__dot:hover {
+  opacity: 0.7;
+}
+
+.slider__dot_active {
+  background-color: rgba(184, 166, 155, 0.7);
+  width: 18px;
+  height: 18px;
+}
+
+@media screen and (max-width: 763px) {
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider__gallery {
+    margin: 0 0 61px 0;
+  }
+
+  .slider__image-container {
+    width: 320px;
+    height: 320px;
+    border: 5px solid white;
+    padding: 5px;
+    margin-right: 0;
+    flex-shrink: 0;
+  }
+
+  .slider__button-container {
+    margin: 0 auto 20px auto;
+  }
+
+  .slider__prev {
+    margin: 0 50px 0 0;
+  }
+
+  .slider__dot-bar {
+    margin: 20px auto 0 auto;
+    gap: 10px;
+  }
+}

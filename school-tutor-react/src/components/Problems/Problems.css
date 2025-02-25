@@ -1,0 +1,153 @@
+.problems {
+  max-width: 1386px;
+  margin: 200px auto 200px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.problems__header-container {
+  display: flex;
+  margin: 0 0 70px 0;
+}
+
+.problems__header-container_type_mobile {
+  flex-direction: column;
+}
+
+.problems__header-line {
+  width: 450px;
+  height: 1px;
+  background-color: white;
+  margin: 35px 24px 0 0;
+}
+
+.problems__header {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.problems__header-lines {
+  display: flex;
+  flex-direction: column;
+}
+
+.problems__header-first-line {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.problems__header-second-line {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.problems__description {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0 auto 70px 0;
+  padding: 0;
+}
+
+.problems__bubbles-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.problems__bubble-row {
+  display: flex;
+  margin: 0 auto 70px auto;
+}
+
+.problems__bubble-row:last-of-type {
+  margin: 0 auto;
+}
+
+.problems__bubble {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px;
+}
+
+.problems__bubble_no-margin {
+  margin-right: 0;
+}
+
+.problems__bubble-problem {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 763px) {
+  .problems {
+    max-width: 320px;
+    margin: 100px auto 100px auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .problems__header-container {
+    display: flex;
+    margin: 0 0 80px 0;
+  }
+
+  .problems__header-line {
+    display: inline-block;
+    width: 150px;
+    margin: 0px 20px 10px 0;
+  }
+
+  .problems__description {
+    text-align: center;
+    margin: 0 auto 82px 0;
+    padding: 0;
+  }
+
+  .problems__bubbles-section {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .problems__bubble-row {
+    margin: 0 auto 20px auto;
+  }
+
+  .problems__bubble {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .problems__bubble:nth-of-type(2n),
+  .problems__bubble:last-of-type {
+    margin-right: 0;
+  }
+
+  .problems__bubble-problem {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

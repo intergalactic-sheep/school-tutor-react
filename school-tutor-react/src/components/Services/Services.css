@@ -1,0 +1,158 @@
+.services {
+  width: 100%;
+  background-color: white;
+  padding: 203px 0 193px 0;
+  color: rgba(144, 110, 103, 1);
+}
+
+.services__all-container {
+  max-width: 1386px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.services__header-container {
+  display: flex;
+  margin: 0 0 74px auto;
+}
+
+.services__header-line {
+  height: 1px;
+  width: 450px;
+  background-color: rgba(144, 110, 103, 1);
+  margin: 40px 30px 10px 0;
+}
+
+.services__header {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display";
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.services__item {
+  display: flex;
+  max-width: 938px;
+  width: 100%;
+  border-top: 1px solid rgba(144, 110, 103, 1);
+  border-bottom: 1px solid rgba(144, 110, 103, 1);
+}
+
+.services__item:nth-of-type(2n) {
+  margin: 0 auto 73px 0;
+}
+
+.services__item:nth-of-type(2n + 1) {
+  margin: 0 0 73px auto;
+}
+
+.services__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.services__service {
+  max-width: 495px;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  margin: 55px 94px 55px 114px;
+  padding: 0;
+}
+
+.services__price {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  margin: auto 25px auto 0;
+}
+
+.services__length {
+  display: flex;
+}
+
+.services__watch-icon {
+  background-image: url("../../images/watch.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: 0;
+  margin: auto 12px auto 0;
+}
+
+.services__duration {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0;
+}
+
+@media screen and (max-width: 763px) {
+  .services {
+    padding: 86px 0 86px 0;
+  }
+
+  .services__all-container {
+    max-width: 320px;
+  }
+
+  .services__header-container {
+    margin: 0 0 66px auto;
+  }
+
+  .services__header-line {
+    width: 151px;
+    margin: 22px 54px 10px 0;
+  }
+
+  .services__header {
+    font-size: 36px;
+    line-height: 34px;
+  }
+
+  .services__item {
+    max-width: 320px;
+    flex-direction: column;
+  }
+
+  .services__item:nth-of-type(2n) {
+    margin: 0 auto 40px 0;
+  }
+
+  .services__item:nth-of-type(2n + 1) {
+    margin: 0 auto;
+    margin-bottom: 42px;
+  }
+
+  .services__service {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 20px auto 20px 0;
+  }
+
+  .services__price {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 0 auto 20px 0;
+  }
+
+  .services__watch-icon {
+    background-image: url("../../images/watch.svg");
+    width: 24px;
+    height: 24px;
+    background-repeat: 0;
+    margin: auto 12px auto 0;
+  }
+
+  .services__duration {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

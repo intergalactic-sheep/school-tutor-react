@@ -1,0 +1,40 @@
+.app {
+  background-color: rgba(184, 166, 155, 0.7);
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  color: white;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  position: relative;
+  z-index: 0;
+}
+
+.background-square {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  width: 49%;
+  height: 17%;
+  background-color: rgba(144, 110, 103, 0.7);
+  border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width: 763px) {
+  .background-square {
+    height: 15%;
+  }
+}

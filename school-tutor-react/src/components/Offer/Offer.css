@@ -1,0 +1,130 @@
+.offer {
+  display: flex;
+  max-width: 1386px;
+  margin: 0 auto 200px auto;
+  position: relative;
+}
+
+.offer__info-container {
+  display: flex;
+  flex-direction: column;
+  margin: 68px 0px 289px 0px;
+}
+
+.offer__job {
+  max-width: 479px;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 50px;
+  margin: 0 0 56px 0;
+  padding: 0;
+}
+
+.offer__name {
+  max-width: 692px;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 83px;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  margin: 0px 7px 56px 0;
+  padding: 0;
+}
+
+.offer__about {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  max-width: 463px;
+  margin: 0 0 94px 0;
+  padding: 0;
+}
+
+.offer__button {
+  width: 460px;
+  height: 116px;
+  background-color: rgba(144, 110, 103, 1);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  line-height: 116px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.offer__button:hover {
+  background-color: rgb(147, 120, 114);
+}
+
+.offer__photo {
+  max-width: 734px;
+  max-height: 1099px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 763px) {
+  .offer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 322px;
+    margin: 0 auto 132px auto;
+  }
+
+  .offer__info-container {
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .offer__job {
+    max-width: 229px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0 0 8px 0;
+    padding: 0;
+  }
+
+  .offer__name {
+    max-width: 330px;
+    text-align: center;
+    font-size: 37px;
+    line-height: 47px;
+    margin: 0px 0px 31px 0;
+    padding: 0;
+  }
+
+  .offer__about {
+    max-width: 247px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 33px 0;
+  }
+
+  .offer__button {
+    width: 260px;
+    height: 75px;
+    border: none;
+    font-size: 16px;
+    line-height: 75px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .offer__photo {
+    aspect-ratio: 1;
+    max-width: 330px;
+    max-height: 330px;
+    object-fit: cover;
+    margin: 0 0 61px 0;
+  }
+}
