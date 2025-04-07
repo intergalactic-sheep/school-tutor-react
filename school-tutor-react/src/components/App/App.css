@@ -33,6 +33,12 @@
   border-bottom-left-radius: 10px;
 }
 
+@media screen and (max-width: 1439px) {
+  .background-square {
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: 763px) {
   .background-square {
     height: 15%;

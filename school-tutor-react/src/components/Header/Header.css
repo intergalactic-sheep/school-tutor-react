@@ -6,19 +6,9 @@
   z-index: 2;
 }
 
-.header_type_mobile {
-  position: relative;
-  max-width: 322px;
-}
-
 .header__name-container {
   max-width: 173px;
   position: relative;
-}
-
-.header__name-container_type_mobile {
-  max-width: 158px;
-  margin: 0 auto 0 0;
 }
 
 .header__feather {
@@ -27,13 +17,8 @@
   height: 23px;
   background-repeat: no-repeat;
   position: absolute;
-  top: 10px;
+  top: -5px;
   left: 14px;
-}
-
-.header__feather_type_mobile {
-  top: 0;
-  left: 0;
 }
 
 .header__name {
@@ -41,14 +26,8 @@
   font-size: 19.5px;
   line-height: 28px;
   font-weight: 600;
-  text-align: center;
   margin: 0;
-}
-
-.header__name_type_mobile {
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0;
+  text-align: right;
 }
 
 .header__nav {
@@ -115,4 +94,64 @@
 
 .header__social-link_whatsup {
   background-image: url(../../images/whatsupp.svg);
+}
+
+@media screen and (max-width: 1439px) {
+  .header {
+    max-width: 984px;
+  }
+
+  .header__name {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+  }
+
+  .header__feather {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+  }
+
+  .header__nav {
+    margin: 0 50px 0 50px;
+  }
+
+  .header__nav-link {
+    margin: auto 30px auto 0;
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .header__contacts {
+    margin: 0 15px 0 0;
+  }
+
+  .header__contact {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 145px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    max-width: 708px;
+  }
+
+  .header__name-container {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 763px) {
+  .header {
+    max-width: 322px;
+    position: relative;
+  }
+
+  .header__name-container {
+    width: 200px;
+    margin: 0 auto 0 0;
+  }
 }

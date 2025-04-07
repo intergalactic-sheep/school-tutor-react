@@ -1,14 +1,16 @@
 .burger-menu {
   position: relative;
+  width: 100%;
 }
 
+/* Toggle Button */
 .burger-menu__toggle {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 50%;
   right: 0px;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   margin: 0;
   justify-content: space-between;
   width: 28px;
@@ -27,18 +29,18 @@
   transition: transform 0.3s ease;
 }
 
+/* X button animation */
 .burger-menu__toggle_type_open .burger-menu__bar:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
 }
-
 .burger-menu__toggle_type_open .burger-menu__bar:nth-child(2) {
   opacity: 0;
 }
-
 .burger-menu__toggle_type_open .burger-menu__bar:nth-child(3) {
   transform: translateY(-10px) rotate(-45deg);
 }
 
+/* NAV Default (Mobile full screen) */
 .burger-menu__nav {
   position: fixed;
   top: 50%;
@@ -59,6 +61,7 @@
   width: 763px;
 }
 
+/* NAV Content */
 .burger-menu__list {
   list-style: none;
   padding: 0;
@@ -69,14 +72,11 @@
   margin-bottom: 28px;
   text-align: center;
   color: white;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21.78px;
-  cursor: pointer;
-  transition: all .1s;
-  font-weight: 400;
   font-size: 25px;
+  font-weight: 400;
   line-height: 30px;
+  cursor: pointer;
+  transition: all 0.1s;
 }
 
 .burger-menu__item:hover {
@@ -84,6 +84,7 @@
   font-size: 30px;
 }
 
+/* Overlay */
 .burger-menu__overlay {
   position: fixed;
   top: 0;
@@ -102,6 +103,7 @@
   display: block;
 }
 
+/* Account Button */
 .burger-menu__account {
   margin: 0px auto 0 auto;
   width: 100px;
@@ -119,4 +121,45 @@
 
 .burger-menu__account:hover {
   opacity: 0.8;
+}
+
+/* ============================= */
+/* 📱 TABLET VIEW: 764px–1024px */
+/* ============================= */
+@media (min-width: 763px) and (max-width: 1023px) {
+  .burger-menu__nav {
+    top: 0;
+    left: auto;
+    right: 0;
+    transform: translateX(100%);
+    width: 60%;
+    height: 100vh;
+    border-radius: 10px 0 0 10px;
+    transition: transform 0.3s ease;
+    padding-top: 80px;
+  }
+
+  .burger-menu__nav_type_open {
+    transform: translateX(0);
+  }
+
+  .burger-menu__list {
+    margin: 0;
+  }
+
+  .burger-menu__item {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+
+  .burger-menu__item:hover {
+    font-size: 24px;
+  }
+
+  .burger-menu__account {
+    width: 120px;
+    height: 36px;
+    font-size: 16px;
+  }
 }

@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 216px auto 70px auto;
+  margin: 200px auto 70px auto;
 }
 
 .sign-up__header-container {
@@ -73,6 +73,85 @@
 
 .sign-up__link:hover {
   color: white;
+}
+
+@media screen and (max-width: 1439px) {
+  .sign-up {
+    max-width: 984px;
+    margin: 100px auto 100px auto;
+  }
+
+  .sign-up__header-container {
+    margin: 0 auto 57px auto;
+  }
+
+  .sign-up__header-line {
+    width: 90px;
+    margin: 35px 36px 0px 0;
+  }
+
+  .sign-up__header {
+    line-height: 50px;
+    font-size: 45px;
+  }
+
+  .sign-up__box {
+    width: 584px;
+    height: 370px;
+  }
+
+  .sign-up__box-title {
+    font-size: 26px;
+    line-height: 36px;
+    width: 382px;
+    margin: 40px auto 70px;
+    padding: 0;
+  }
+
+  .sign-up__box-list {
+    margin: 0 155px 115px auto;
+    padding: 0;
+  }
+
+  .sign-up__box-item {
+    margin: 0 0 40px 0;
+  }
+
+  .sign-up__link {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .sign-up {
+    max-width: 708px;
+    margin: 75px auto 75px auto;
+  }
+
+  .sign-up__header-line {
+    width: 180px;
+  }
+
+  .sign-up__header {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .sign-up__box-title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .sign-up__box-list {
+    margin: 0 160px 115px auto;
+    padding: 0;
+  }
+
+  .sign-up__link {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 
 @media screen and (max-width: 763px) {

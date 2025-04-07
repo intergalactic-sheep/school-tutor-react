@@ -68,6 +68,78 @@
   border-radius: 10px;
 }
 
+@media screen and (max-width: 1439px) {
+  .offer {
+    max-width: 984px;
+    margin: 0 auto 100px auto;
+  }
+
+  .offer__info-container {
+    margin: 68px 40px 0px 0px;
+  }
+
+  .offer__job {
+    max-width: 288px;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 46px 0;
+  }
+
+  .offer__name {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0px 7px 46px 0;
+  }
+
+  .offer__about {
+    max-width: 410px;
+    margin: 0 0 46px 0;
+    padding: 0;
+  }
+
+  .offer__button {
+    width: 287px;
+    height: 85px;
+    font-size: 18px;
+    line-height: 85px;
+  }
+
+  .offer__photo {
+    width: 388px;
+    height: 580px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .offer {
+    max-width: 708px;
+    margin: 0 auto 75px auto;
+  }
+
+  .offer__info-container {
+    margin: auto 20px auto 0px;
+  }
+
+  .offer__job {
+    max-width: 288px;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0 0 30px 0;
+  }
+
+  .offer__name {
+    font-size: 33px;
+    line-height: 45px;
+    margin: 0px 0px 30px 0;
+  }
+
+  .offer__about {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 0 30px 0;
+  }
+}
+
 @media screen and (max-width: 763px) {
   .offer {
     flex-direction: column;

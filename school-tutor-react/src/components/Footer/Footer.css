@@ -70,6 +70,76 @@
   padding: 0;
 }
 
+@media screen and (max-width: 1439px) {
+  .footer {
+    column-gap: 236px;
+    row-gap: 34px;
+  }
+
+  .footer__name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .footer__phone-icon {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .footer__number {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .footer__city {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .footer__email-icon {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .footer__email {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    margin-bottom: 50px;
+    column-gap: 190px;
+    row-gap: 20px;
+    max-width: 708px;
+  }
+
+  .footer__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .footer__number {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .footer__city {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .footer__email {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
 @media screen and (max-width: 763px) {
   .footer {
     grid-template-columns: repeat(1, 1fr);

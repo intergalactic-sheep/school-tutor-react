@@ -27,7 +27,7 @@ export default function BurgerMenu() {
           isOpen ? "burger-menu__overlay_type_opened" : ""
         }`}
       ></div>
-      <div className="burger__menu">
+      <div className="burger-menu">
         <button
           className={`burger-menu__toggle ${
             isOpen ? "burger-menu__toggle_type_open" : ""

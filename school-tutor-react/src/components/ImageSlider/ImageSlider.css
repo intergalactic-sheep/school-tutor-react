@@ -92,6 +92,24 @@
   height: 18px;
 }
 
+@media screen and (max-width: 1439px) {
+  .slider__image-container {
+    width: 322px;
+    height: 322px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .slider__image-container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .slider__button-container {
+    margin: 0 0 40px auto;
+  }
+}
+
 @media screen and (max-width: 763px) {
   .slider {
     display: flex;
